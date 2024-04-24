@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: violet;
+}
+.g-scrolling-carousel{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+.items>a{
+    margin: 35px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    background-color: rgb(94, 17, 94);
+    box-shadow: 12px 12px 12px black;
+    border: 1px solid #000;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Cursor Program</title>
+<style>
+    body {
+        cursor: none;  
+    }
+    .custom-cursor {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(221, 117, 117); 
+        pointer-events: none; 
+        z-index: 9999; 
+    }
+</style>
+</head>
+<body>
+
+<div class="custom-cursor">
+    <!-- <button> </button> -->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(document).on('mousemove', function(e){
+        $('.custom-cursor').css({
+            left: e.pageX - 15, // Offset to position cursor at center
+            top: e.pageY - 15
+        });
+    });
+});
+</script>
+
+</body>
+</html>
